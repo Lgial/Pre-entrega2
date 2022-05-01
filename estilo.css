@@ -343,6 +343,18 @@ p {
     #main-logo {
         font-size: 1.2rem;
     }
+
+    .flex-contain {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin: 5px;
+        position: relative;
+        left: 15%;
+
+    }
+
+
 }
 
 
@@ -395,6 +407,15 @@ p {
          height: auto;
     }
 
+    .flex-contain {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 0;
+        
+
+    }
+
 }
 
 @media (min-width: 1024px) { 
@@ -445,6 +466,4 @@ p {
      }
 
 
-    /* Acá arranca novedades*/
-
-
+    /* Acá arranca novedades*/ 
