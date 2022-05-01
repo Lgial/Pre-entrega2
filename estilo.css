@@ -161,6 +161,142 @@ h1, h2, h3, h4 {
     
 }
 
+.header {
+    grid-area: header;
+}
+.navbar {
+    grid-area: navbar;
+}
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.footer li a {
+    list-style-type: none!important;
+    text-decoration: none;
+    
+}
+
+.grid-container {
+    background-image: url(../Pre-entrega2/images/main.jpg);
+    grid-template-columns:
+    "header header header"
+    "nav    nav    sidebar"
+    "main   main   main"
+    "footer footer footer";
+
+}
+
+.flex-contain {
+    border: 2px solid #7f520b;
+
+}
+
+.caja1:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.caja1 {overflow:hidden;}
+
+.caja2:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
+
+.caja2 {overflow:hidden;}
+
+.caja3:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
+
+.caja3 {overflow:hidden;}
+
+.caja1 {
+    background-image: url(../Pre-entrega2/images/novedad1.jpg);
+}
+
+.caja2 {
+    background-image: url(../Pre-entrega2/images/novedad2.jpg);
+}
+
+.caja3 {
+    background-image: url(../Pre-entrega2/images/novedad3.jpg);
+}
+
+.h2-center {
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    padding: 5px;
+    margin: 5px;
+    color: #ffffff;
+}
+
+.p-nov {
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    color: #ffffff;
+}
+
+p {
+    font-family: Montserrat,sans-serif;
+    font-size: .9375rem;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+#features-section .feature-card:nth-child(1) {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/feature1.jpg);
+}
+
+
+.features p {
+    opacity: 0;
+    transition: .4s ease;
+}
+
+
+.especial_feature1 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Pre-entrega2/images/feature4.jpg)!important;
+}
+
+.especial_feature2 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Pre-entrega2/images/feature1.jpg)!important;
+}
+
+.especial_feature3 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../Pre-entrega2/images/feature6.jpg)!important;
+}
+
+.features h2 {
+    margin-top: 30vh;
+    transition: .4s ease;
+}
+
+.features .col-md-4 {
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+    padding: 10vh 5vw;  }
+
+    .feature-card {
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        border-bottom: 2px solid #000;  }
+
+ .short-hr-center {
+     color: #ffffff;
+ }
 
 
 @media (min-width: 320px) { 
@@ -307,4 +443,8 @@ h1, h2, h3, h4 {
     }
 
      }
+
+
+    /* Acá arranca novedades*/
+
 
