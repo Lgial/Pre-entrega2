@@ -169,7 +169,7 @@ h1, h2, h3, h4 {
 
 }
 
-.footer .contenedor {
+.footer .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -179,7 +179,7 @@ h1, h2, h3, h4 {
     padding: 45px 0px;
 }
 
-.footer .contenedor .box figure {
+.footer grupo-1 .box figure {
 
     width: 100%;
     height: 100%;
@@ -188,24 +188,24 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
-.footer .contenedor .box figure .img-footer {
+.footer .grupo-1 .box figure .img-footer {
 
     width: 250px;
  }
 
- .footer .contenedor .box h2 {
+ .footer .grupo-1 .box h2 {
 
     color: #ffffff;
     margin-bottom: 25px;
     font-size: 20px;
  }
 
- .footer .contenedor .box p {
+ .footer .grupo-1 .box p {
      color: #f7f7f7;
     margin-bottom: 10px;
  }
 
- .footer .contenedor .box .red-social a {
+ .footer .grupo-1 .box .red-social a {
 
     display: flex;
     flex-direction: column;
@@ -214,18 +214,18 @@ h1, h2, h3, h4 {
     height: auto;
     line-height: 45px;
     color: #ffffff;
-    margin right: 10px;
+    margin-right: 10px;
     text-align: center ;
     transition: all 300ms ease;
 
  }
 
- .footer .contenedor .box .red-social a:hover {
+ .footer .grupo-1 .box .red-social a:hover {
 
     color: #7f520b;
  }
 
- .footer .contenedor-2 {
+ .footer .grupo-2 {
         padding: 15px 10px;
         text-align: center;
         color: #f7f7f7;
@@ -233,9 +233,18 @@ h1, h2, h3, h4 {
 
  }
 
- .footer .contenedor-2 small {
+ .footer .grupo-2 small {
      font-size: 15px;
  }
+
+@media screen and (max-width:2560px)
+{
+    .footer .grupo-1 {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 
 /* Aca termina el index y empieza imagenes*/
 
@@ -255,14 +264,6 @@ h1, h2, h3, h4 {
         display: flex;
 
     
-}
-
-
-.footer li  {
-    list-style-type: none!important;
-    text-decoration: none;
-    display: inline;
-    padding: 10px; 
 }
 
 
@@ -413,20 +414,11 @@ p {
     margin: 0.5rem;
 }
 
-@media (max-width:800px) { 
-
-    .footer .contenedor {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-        padding: 35px 0px;
-
-    }
 
 @media (min-width: 320px) { 
 
     .navbar {
-        width: 50vh;
+        width: 53vh;
         height: auto;
     }
 
@@ -448,19 +440,19 @@ p {
         padding: 3px;
         display: flex;
         justify-content: space-evenly;
-        width: 100%;
+        width: 90%;
     }
     .galeria {
         width: 100%;
     }
 
     #bgvideo {
-        width: 50vh;
+        width: 53vh;
        
     }
     
     #partners {
-        width: 50vh;
+        width: 53vh;
         
     }
 
@@ -582,7 +574,7 @@ p {
 @media (min-width: 1440px) { 
 
     .navbar {
-        width: 200%;
+        width: 100%;
     }
 
     #bgvideo {
@@ -607,17 +599,4 @@ p {
             margin: 10px;
             display: flex;
             flex-direction: row;
-        
-    }
-
      }
-
-
-    /* Acá arranca novedades*/ 
-
-
-    
-
-     
-
-        
