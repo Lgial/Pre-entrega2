@@ -75,7 +75,9 @@ span {
     background-size: cover;
     padding: 15px 0;
     position: relative;
-    text-align: center; }
+    text-align: center; 
+    border: 1px solid #7f520b;
+}
 
 .row > * {
        flex-shrink: 0;
@@ -141,8 +143,102 @@ h1, h2, h3, h4 {
     border-color: rgba(255,255,255,.1);
 }
 
+.section-center {
+    border: 1px solid #7f520b;
+    border-radius: 4px;
+}
+
+.section-center h2 {
+    color: #fbf292;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section-center p {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.footer {
+
+    width: 100%;
+    background-image: url(../Pre-entrega2/images/main.jpg);
+
+}
+
+.footer .contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .contenedor .box figure {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .contenedor .box figure .img-footer {
+
+    width: 250px;
+ }
+
+ .footer .contenedor .box h2 {
+
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+ }
+
+ .footer .contenedor .box p {
+     color: #f7f7f7;
+    margin-bottom: 10px;
+ }
+
+ .footer .contenedor .box .red-social a {
+
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    width: 45px;
+    height: auto;
+    line-height: 45px;
+    color: #ffffff;
+    margin right: 10px;
+    text-align: center ;
+    transition: all 300ms ease;
+
+ }
+
+ .footer .contenedor .box .red-social a:hover {
+
+    color: #7f520b;
+ }
+
+ .footer .contenedor-2 {
+        padding: 15px 10px;
+        text-align: center;
+        color: #f7f7f7;
+
+
+ }
+
+ .footer .contenedor-2 small {
+     font-size: 15px;
+ }
 
 /* Aca termina el index y empieza imagenes*/
+
 
 
 .container-img {
@@ -161,40 +257,15 @@ h1, h2, h3, h4 {
     
 }
 
-.header {
-    grid-area: header;
-}
-.navbar {
-    grid-area: navbar;
-}
-.main {
-    grid-area: main;
-}
 
-.sidebar {
-    grid-area: sidebar;
-}
-
-.footer {
-    grid-area: footer;
-    text-align: center;
-}
-
-.footer li a {
+.footer li  {
     list-style-type: none!important;
     text-decoration: none;
-    
+    display: inline;
+    padding: 10px; 
 }
 
-.grid-container {
-    background-image: url(../Pre-entrega2/images/main.jpg);
-    grid-template-columns:
-    "header header header"
-    "nav    nav    sidebar"
-    "main   main   main"
-    "footer footer footer";
 
-}
 
 .flex-contain {
     border: 2px solid #7f520b;
@@ -299,6 +370,59 @@ p {
  }
 
 
+
+ .button-game {
+
+        height: auto;
+        width: 150px;
+        margin: 20px auto;
+        padding: 10px 15px;
+        font-size: 1rem;
+        font-family: Montserrat,sans-serif;
+        color: #222;
+        border: none;
+        border-radius: 4px;
+        background: #fff;
+        display: inline-block;
+        outline: none;
+        transition: all .2s ease;
+        cursor: pointer;
+        text-align: center;
+
+
+ }
+
+
+ .form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #ff0000;
+    padding: 20px;
+    margin: auto;
+}
+
+.form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+@media (max-width:800px) { 
+
+    .footer .contenedor {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0px;
+
+    }
+
 @media (min-width: 320px) { 
 
     .navbar {
@@ -354,6 +478,29 @@ p {
 
     }
 
+    .h2-center {
+        font-size: 1.8rem;
+        text-align: center;
+        position: relative;
+        top: 3rem;
+        padding: 5px;
+        margin: 5px;
+        color: #ffffff;
+    }
+    
+    .p-nov {
+        font-family: Montserrat,sans-serif;
+        font-size: 1rem;
+        padding: 5px 5px 5px 0;
+        margin: 0;
+        font-weight: 400;
+        text-align: center;
+        position: relative;
+        top: 3rem;
+        color: #ffffff;
+    }
+
+  
 
 }
 
@@ -435,7 +582,7 @@ p {
 @media (min-width: 1440px) { 
 
     .navbar {
-        width: 100%;
+        width: 200%;
     }
 
     #bgvideo {
@@ -467,3 +614,10 @@ p {
 
 
     /* Acá arranca novedades*/ 
+
+
+    
+
+     
+
+        
